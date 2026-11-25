@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九1免费电脑网页版在线观看 - 高清影视,随时随地畅享观影</title>
+<meta name="description" content="九1免费电脑网页版在线观看，汇聚海量高清影视资源，电脑网页版即点即看，无需下载，畅享流畅稳定的在线观影体验。">
+<style>
+  :root{
+    --bg:#0a0c12;
+    --bg-soft:#11141d;
+    --panel:#161a25;
+    --panel-2:#1d2231;
+    --line:#262c3d;
+    --text:#e8ebf4;
+    --muted:#9aa3b8;
+    --brand:#ff4d4f;
+    --brand-2:#ff8a3d;
+    --cyan:#38d9d9;
+    --glow:rgba(255,77,79,.35);
+    --radius:16px;
+    --max:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ::selection{background:var(--brand);color:#fff;}
+
+  /* 滚动条 */
+  ::-webkit-scrollbar{width:10px;height:10px;}
+  ::-webkit-scrollbar-track{background:var(--bg-soft);}
+  ::-webkit-scrollbar-thumb{background:#2c3346;border-radius:6px;}
+  ::-webkit-scrollbar-thumb:hover{background:#3a435c;}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  /* 顶部导航 */
+  header.site-header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(10,12,18,.82);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.5px;}
+  .logo .mark{
+    width:36px;height:36px;border-radius:10px;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    display:grid;place-items:center;
+    box-shadow:0 6px 18px var(--glow);
+    flex:none;
+  }
+  .logo .mark svg{width:20px;height:20px;}
+  .logo span.grad{
+    background:linear-gradient(90deg,#fff,#ffb199);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  nav.main-nav{display:flex;gap:28px;font-size:15px;color:var(--muted);}
+  nav.main-nav a{position:relative;padding:6px 0;transition:color .25s;}
+  nav.main-nav a:hover{color:var(--text);}
+  nav.main-nav a::after{
+    content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;
+    background:linear-gradient(90deg,var(--brand),var(--brand-2));
+    transition:width .3s;border-radius:2px;
+  }
+  nav.main-nav a:hover::after{width:100%;}
+  .nav-actions{display:flex;align-items:center;gap:14px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:10px 22px;border-radius:10px;font-size:14px;font-weight:600;
+    cursor:pointer;border:none;transition:transform .2s,box-shadow .25s,background .25s;
+    font-family:inherit;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    color:#fff;box-shadow:0 8px 22px var(--glow);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px var(--glow);}
+  .btn-ghost{
+    background:transparent;color:var(--text);
+    border:1px solid var(--line);
+  }
+  .btn-ghost:hover{background:var(--panel);border-color:#3a435c;}
+
+  .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .hamburger span{display:block;width:24px;height:2px;background:var(--text);margin:5px 0;border-radius:2px;transition:.3s;}
+
+  /* Hero */
+  .hero{
+    position:relative;
+    padding:80px 0 70px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;top:-200px;right:-180px;width:640px;height:640px;
+    background:radial-gradient(circle,rgba(255,77,79,.18),transparent 65%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;bottom:-240px;left:-200px;width:600px;height:600px;
+    background:radial-gradient(circle,rgba(56,217,217,.12),transparent 65%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:6px 14px;border-radius:999px;font-size:13px;
+    background:rgba(255,77,79,.12);color:#ff9a9b;border:1px solid rgba(255,77,79,.3);
+    margin-bottom:24px;
+  }
+  .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 10px var(--brand);animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.75);}}
+  h1.hero-title{
+    font-size:52px;line-height:1.15;font-weight:900;letter-spacing:-.5px;margin-bottom:22px;
+  }
+  h1.hero-title .hl{
+    background:linear-gradient(120deg,var(--brand),var(--brand-2) 60%,#ffd08a);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{font-size:17px;color:var(--muted);max-width:520px;margin-bottom:34px;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px;}
+  .hero-cta .btn{padding:14px 30px;font-size:15px;border-radius:12px;}
+  .hero-stats{display:flex;gap:40px;flex-wrap:wrap;}
+  .stat .num{font-size:28px;font-weight:800;color:#fff;background:linear-gradient(90deg,#fff,#ffb199);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .stat .lbl{font-size:13px;color:var(--muted);letter-spacing:.5px;}
+
+  /* Hero 播放器卡片 */
+  .player-card{
+    position:relative;border-radius:20px;overflow:hidden;
+    background:linear-gradient(160deg,#1a1f2e,#10131d);
+    border:1px solid var(--line);
+    box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.02) inset;
+  }
+  .player-screen{
+    position:relative;aspect-ratio:16/10;
+    background:
+      radial-gradient(ellipse at 30% 20%,rgba(255,77,79,.28),transparent 55%),
+      radial-gradient(ellipse at 80% 80%,rgba(56,217,217,.2),transparent 55%),
+      #0d1017;
+    display:grid;place-items:center;overflow:hidden;
+  }
+  .player-screen .scanline{
+    position:absolute;inset:0;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px);
+    pointer-events:none;
+  }
+  .play-btn{
+    width:76px;height:76px;border-radius:50%;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    display:grid;place-items:center;cursor:pointer;border:none;
+    box-shadow:0 10px 40px var(--glow),0 0 0 10px rgba(255,77,79,.08);
+    transition:transform .25s,box-shadow .25s;position:relative;z-index:3;
+  }
+  .play-btn:hover{transform:scale(1.08);box-shadow:0 14px 50px var(--glow),0 0 0 16px rgba(255,77,79,.1);}
+  .play-btn svg{width:30px;height:30px;margin-left:4px;}
+  .player-screen .film-tag{
+    position:absolute;top:16px;left:16px;font-size:12px;padding:4px 12px;border-radius:6px;
+    background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.12);color:#e8ebf4;letter-spacing:1px;
+  }
+  .player-screen .quality-tag{
+    position:absolute;top:16px;right:16px;font-size:12px;padding:4px 10px;border-radius:6px;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-weight:700;
+  }
+  .player-bar{
+    padding:16px 20px;display:flex;align-items:center;gap:14px;
+    border-top:1px solid var(--line);background:var(--panel);
+  }
+  .player-bar .pbar-title{font-size:14px;font-weight:600;flex:1;}
+  .player-bar .pbar-title small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px;}
+  .player-bar .pbar-badge{font-size:11px;padding:3px 9px;border-radius:5px;background:rgba(56,217,217,.14);color:var(--cyan);border:1px solid rgba(56,217,217,.3);}
+
+  /* 通用区块标题 */
+  section{padding:78px 0;position:relative;}
+  .section-head{margin-bottom:44px;max-width:640px;}
+  .section-head .eyebrow{
+    display:inline-block;font-size:13px;letter-spacing:3px;font-weight:700;
+    color:var(--brand);margin-bottom:12px;text-transform:uppercase;
+  }
+  .section-head h2{font-size:34px;font-weight:800;line-height:1.25;letter-spacing:-.3px;margin-bottom:14px;}
+  .section-head p{color:var(--muted);font-size:15.5px;}
+
+  /* 资源区 */
+  #library{background:linear-gradient(180deg,var(--bg),var(--bg-soft));}
+  .filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+  .filter-chip{
+    padding:8px 18px;border-radius:999px;font-size:14px;cursor:pointer;
+    background:var(--panel);border:1px solid var(--line);color:var(--muted);
+    transition:.25s;font-family:inherit;
+  }
+  .filter-chip:hover{color:var(--text);border-color:#3a435c;}
+  .filter-chip.active{
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    color:#fff;border-color:transparent;box-shadow:0 6px 18px var(--glow);
+  }
+  .movie-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .movie-card{
+    border-radius:var(--radius);overflow:hidden;background:var(--panel);
+    border:1px solid var(--line);cursor:pointer;
+    transition:transform .3s,box-shadow .3s,border-color .3s;
+    position:relative;
+  }
+  .movie-card:hover{transform:translateY(-6px);box-shadow:0 20px 46px rgba(0,0,0,.55);border-color:#3a435c;}
+  .movie-thumb{
+    position:relative;aspect-ratio:16/10;overflow:hidden;
+    display:grid;place-items:center;
+  }
+  .movie-thumb .bg-art{position:absolute;inset:0;transition:transform .5s;}
+  .movie-card:hover .movie-thumb .bg-art{transform:scale(1.08);}
+  .movie-thumb .overlay{
+    position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.65));
+    display:flex;align-items:flex-end;justify-content:flex-end;padding:12px;
+    opacity:0;transition:opacity .3s;
+  }
+  .movie-card:hover .movie-thumb .overlay{opacity:1;}
+  .movie-thumb .overlay .mini-play{
+    width:40px;height:40px;border-radius:50%;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    display:grid;place-items:center;box-shadow:0 6px 20px var(--glow);
+  }
+  .movie-thumb .overlay .mini-play svg{width:16px;height:16px;margin-left:2px;}
+  .movie-info{padding:16px 18px 18px;}
+  .movie-info h3{font-size:16px;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .movie-meta{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:12.5px;}
+  .movie-meta .tag{color:#ffb199;}
+
+  /* 类型渐变艺术 */
+  .art-1{background:linear-gradient(135deg,#ff4d4f,#7a1e2b);}
+  .art-2{background:linear-gradient(135deg,#38d9d9,#0e5a6b);}
+  .art-3{background:linear-gradient(135deg,#a855f7,#312e81);}
+  .art-4{background:linear-gradient(135deg,#f59e0b,#7c2d12);}
+  .art-5{background:linear-gradient(135deg,#22c55e,#14532d);}
+  .art-6{background:linear-gradient(135deg,#ec4899,#831843);}
+  .art-7{background:linear-gradient(135deg,#3b82f6,#1e3a8a);}
+  .art-8{background:linear-gradient(135deg,#14b8a6,#134e4a);}
+  .art-noise{position:absolute;inset:0;opacity:.35;background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:6px 6px;}
+  .art-glyph{position:relative;z-index:2;font-size:34px;font-weight:900;color:rgba(255,255,255,.9);letter-spacing:2px;text-shadow:0 4px 20px rgba(0,0,0,.4);}
+
+  /* 功能特性 */
+  #features{background:var(--bg-soft);}
+  .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .feature-card{
+    background:linear-gradient(160deg,var(--panel),var(--panel-2));
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:32px 28px;transition:transform .3s,border-color .3s,box-shadow .3s;
+    position:relative;overflow:hidden;
+  }
+  .feature-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--brand),var(--brand-2),transparent);
+    opacity:0;transition:opacity .3s;
+  }
+  .feature-card:hover{transform:translateY(-5px);border-color:#3a435c;box-shadow:0 18px 40px rgba(0,0,0,.4);}
+  .feature-card:hover::before{opacity:1;}
+  .feature-icon{
+    width:54px;height:54px;border-radius:14px;display:grid;place-items:center;
+    background:rgba(255,77,79,.1);border:1px solid rgba(255,77,79,.25);margin-bottom:22px;
+  }
+  .feature-icon svg{width:26px;height:26px;stroke:var(--brand);}
+  .feature-card h3{font-size:18px;font-weight:700;margin-bottom:10px;}
+  .feature-card p{font-size:14.5px;color:var(--muted);}
+
+  /* 使用步骤 */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step;}
+  .step{
+    position:relative;padding:34px 26px 30px;border-radius:var(--radius);
+    background:var(--panel);border:1px solid var(--line);
+    transition:.3s;
+  }
+  .step:hover{background:var(--panel-2);transform:translateY(-4px);}
+  .step .step-num{
+    counter-increment:step;font-size:52px;font-weight:900;line-height:1;
+    background:linear-gradient(135deg,var(--brand),transparent 80%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:16px;
+  }
+  .step .step-num::before{content:"0" counter(step);}
+  .step h3{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14px;color:var(--muted);}
+
+  /* 分类推荐 */
+  #categories{background:linear-gradient(180deg,var(--bg-soft),var(--bg));}
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .cat-card{
+    position:relative;border-radius:var(--radius);overflow:hidden;
+    height:150px;display:flex;align-items:flex-end;padding:20px;
+    border:1px solid var(--line);cursor:pointer;
+    transition:transform .3s,box-shadow .3s;
+  }
+  .cat-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.45);}
+  .cat-card .cat-name{position:relative;z-index:3;font-size:17px;font-weight:800;letter-spacing:1px;}
+  .cat-card .cat-count{position:relative;z-index:3;font-size:12px;color:rgba(255,255,255,.7);margin-left:8px;font-weight:400;}
+  .cat-card .cat-mask{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.7));z-index:2;}
+
+  /* 社区 */
+  #community{background:var(--bg-soft);}
+  .community-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:start;}
+  .comment-list{display:flex;flex-direction:column;gap:16px;}
+  .comment{
+    display:flex;gap:16px;padding:20px;border-radius:14px;
+    background:var(--panel);border:1px solid var(--line);
+    transition:border-color .3s,transform .3s;
+  }
+  .comment:hover{border-color:#3a435c;transform:translateX(4px);}
+  .avatar{
+    width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;
+    font-weight:800;font-size:16px;color:#fff;
+  }
+  .comment-body{flex:1;min-width:0;}
+  .comment-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+  .comment-head .cname{font-size:14px;font-weight:700;}
+  .comment-head .ctime{font-size:12px;color:var(--muted);}
+  .comment p{font-size:14px;color:var(--muted);margin-bottom:10px;}
+  .comment-foot{display:flex;gap:18px;font-size:12px;color:#6b7489;}
+  .comment-foot span{cursor:pointer;transition:color .25s;}
+  .comment-foot span:hover{color:var(--brand);}
+
+  .community-side{display:flex;flex-direction:column;gap:20px;}
+  .side-card{
+    background:linear-gradient(160deg,var(--panel),var(--panel-2));
+    border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+  }
+  .side-card h3{font-size:17px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .side-card h3 .dot2{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);}
+  .rank-list{display:flex;flex-direction:column;gap:12px;list-style:none;}
+  .rank-list li{display:flex;align-items:center;gap:14px;font-size:14px;}
+  .rank-list li .rk{
+    width:24px;height:24px;border-radius:7px;display:grid;place-items:center;
+    font-size:12px;font-weight:800;background:var(--panel-2);color:var(--muted);flex:none;
+  }
+  .rank-list li:nth-child(1) .rk{background:linear-gradient(135deg,#ff4d4f,#ff8a3d);color:#fff;}
+  .rank-list li:nth-child(2) .rk{background:linear-gradient(135deg,#f59e0b,#b45309);color:#fff;}
+  .rank-list li:nth-child(3) .rk{background:linear-gradient(135deg,#38d9d9,#0e5a6b);color:#fff;}
+  .rank-list li .rname{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);}
+  .rank-list li .rheat{font-size:12px;color:#6b7489;}
+
+  .hot-tags{display:flex;flex-wrap:wrap;gap:10px;}
+  .hot-tags a{
+    font-size:13px;padding:6px 14px;border-radius:8px;
+    background:var(--panel-2);border:1px solid var(--line);color:var(--muted);
+    transition:.25s;
+  }
+  .hot-tags a:hover{color:#fff;border-color:var(--brand);background:rgba(255,77,79,.12);}
+
+  /* 数据/信任区 */
+  #trust{
+    padding:64px 0;
+    background:
+      radial-gradient(ellipse at 20% 50%,rgba(255,77,79,.1),transparent 55%),
+      radial-gradient(ellipse at 80% 50%,rgba(56,217,217,.08),transparent 55%),
+      var(--bg);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;}
+  .trust-item .tnum{font-size:40px;font-weight:900;letter-spacing:-1px;background:linear-gradient(120deg,#fff,#ffb199);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1;}
+  .trust-item .tlabel{font-size:14px;color:var(--muted);margin-top:8px;}
+
+  /* 常见问题 */
+  .faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .faq-item{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;transition:border-color .3s;
+  }
+  .faq-item.open{border-color:#3a435c;}
+  .faq-q{
+    display:flex;align-items:center;justify-content:space-between;gap:20px;
+    padding:20px 24px;cursor:pointer;font-size:15.5px;font-weight:600;
+    user-select:none;
+  }
+  .faq-q .plus{
+    width:26px;height:26px;border-radius:50%;flex:none;position:relative;
+    background:var(--panel-2);transition:transform .3s,background .3s;
+  }
+  .faq-q .plus::before,.faq-q .plus::after{
+    content:"";position:absolute;top:50%;left:50%;background:var(--muted);border-radius:2px;
+    transition:.3s;transform:translate(-50%,-50%);
+  }
+  .faq-q .plus::before{width:12px;height:2px;}
+  .faq-q .plus::after{width:2px;height:12px;}
+  .faq-item.open .plus{transform:rotate(135deg);background:rgba(255,77,79,.2);}
+  .faq-item.open .plus::before,.faq-item.open .plus::after{background:var(--brand);}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .4s ease;
+  }
+  .faq-a p{padding:0 24px 22px;font-size:14.5px;color:var(--muted);}
+
+  /* CTA */
+  .cta-section{
+    padding:90px 0;text-align:center;position:relative;overflow:hidden;
+  }
+  .cta-section::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse at 50% 100%,rgba(255,77,79,.22),transparent 65%);
+    pointer-events:none;
+  }
+  .cta-inner{position:relative;z-index:2;}
+  .cta-inner h2{font-size:40px;font-weight:900;margin-bottom:18px;letter-spacing:-.5px;}
+  .cta-inner p{color:var(--muted);font-size:16px;max-width:560px;margin:0 auto 34px;}
+  .cta-inner .btn{padding:16px 40px;font-size:16px;border-radius:14px;}
+
+  /* 页脚 */
+  footer.site-footer{
+    background:var(--bg-soft);border-top:1px solid var(--line);
+    padding:60px 0 30px;
+  }
+  .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+  .footer-brand p{font-size:14px;color:var(--muted);margin:16px 0 20px;max-width:280px;}
+  .footer-social{display:flex;gap:12px;}
+  .footer-social a{
+    width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+    background:var(--panel);border:1px solid var(--line);transition:.25s;
+  }
+  .footer-social a:hover{background:rgba(255,77,79,.15);border-color:var(--brand);}
+  .footer-social svg{width:17px;height:17px;fill:var(--muted);transition:.25s;}
+  .footer-social a:hover svg{fill:var(--brand);}
+  .footer-col h4{font-size:14px;font-weight:700;margin-bottom:18px;letter-spacing:.5px;}
+  .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
+  .footer-col ul a{font-size:13.5px;color:var(--muted);transition:color .25s;}
+  .footer-col ul a:hover{color:var(--brand);}
+  .footer-bottom{
+    border-top:1px solid var(--line);padding-top:26px;
+    display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    font-size:13px;color:#6b7489;
+  }
+  .footer-bottom .links{display:flex;gap:20px;}
+  .footer-bottom a:hover{color:var(--text);}
+
+  /* 回到顶部 */
+  #backTop{
+    position:fixed;right:26px;bottom:26px;width:46px;height:46px;border-radius:12px;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    display:grid;place-items:center;cursor:pointer;border:none;
+    box-shadow:0 10px 26px var(--glow);opacity:0;visibility:hidden;
+    transform:translateY(16px);transition:.35s;z-index:90;
+  }
+  #backTop.show{opacity:1;visibility:visible;transform:translateY(0);}
+  #backTop:hover{transform:translateY(-3px);}
+  #backTop svg{width:20px;height:20px;stroke:#fff;}
+
+  /* 滚动浮现动画 */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* 响应式 */
+  @media (max-width:1024px){
+    .hero-inner{grid-template-columns:1fr;gap:44px;}
+    .hero-visual{order:-1;max-width:560px;width:100%;}
+    .movie-grid{grid-template-columns:repeat(3,1fr);}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .features-grid{grid-template-columns:repeat(2,1fr);}
+    .community-layout{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1.4fr 1fr 1fr;row-gap:36px;}
+  }
+  @media (max-width:860px){
+    nav.main-nav{display:none;position:absolute;top:68px;left:0;right:0;
+      background:rgba(10,12,18,.98);flex-direction:column;padding:20px 24px;gap:0;
+      border-bottom:1px solid var(--line);}
+    nav.main-nav.open{display:flex;}
+    nav.main-nav a{padding:14px 0;border-bottom:1px solid var(--line);}
+    nav.main-nav a::after{display:none;}
+    .hamburger{display:block;}
+    .nav-actions .btn-ghost{display:none;}
+    h1.hero-title{font-size:38px;}
+    .steps{grid-template-columns:1fr;}
+    .trust-grid{grid-template-columns:repeat(2,1fr);gap:36px 20px;}
+    .movie-grid{grid-template-columns:repeat(2,1fr);}
+    .section-head h2{font-size:27px;}
+    .cta-inner h2{font-size:30px;}
+    section{padding:60px 0;}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 18px;}
+    h1.hero-title{font-size:31px;}
+    .hero-stats{gap:26px;}
+    .stat .num{font-size:23px;}
+    .movie-grid{gap:14px;}
+    .movie-info{padding:12px 13px 14px;}
+    .movie-info h3{font-size:14px;}
+    .cat-grid{grid-template-columns:1fr;}
+    .features-grid{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr 1fr;}
+    .footer-brand{grid-column:1/-1;}
+    .footer-bottom{justify-content:center;text-align:center;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6.5C4 5.67 4.67 5 5.5 5h9L19 9.5V18c0 .83-.67 1.5-1.5 1.5h-12C4.67 19.5 4 18.83 4 18V6.5Z" fill="#fff"/>
+          <path d="m10 9.5 4.5 2.8L10 15V9.5Z" fill="#ff4d4f"/>
+        </svg>
+      </span>
+      <span class="grad">九1影视</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#library">影视库</a>
+      <a href="#features">产品特性</a>
+      <a href="#categories">分类频道</a>
+      <a href="#community">社区动态</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost" onclick="document.getElementById('library').scrollIntoView()">搜索影片</button>
+      <button class="btn btn-primary" onclick="document.getElementById('library').scrollIntoView()">立即观看</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy reveal">
+        <span class="hero-badge"><span class="dot"></span>PC 网页版 · 无需安装 · 打开即看</span>
+        <h1 class="hero-title">九1免费电脑网页版<br><span class="hl">在线观看</span> 高清畅享</h1>
+        <p class="hero-sub">九1影视专注电脑网页版观影体验，海量高清电影、剧集、纪录片即点即播。无需下载客户端，打开浏览器就能享受流畅稳定的在线观看服务。</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.getElementById('library').scrollIntoView()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m8 5 11 7-11 7V5Z" fill="#fff"/></svg>
+            免费开始观看
+          </button>
+          <a class="btn btn-ghost" href="#features">了解产品特性</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num" data-count="128000">0</div><div class="lbl">影视资源</div></div>
+          <div class="stat"><div class="num" data-count="960">0</div><div class="lbl">频道分类</div></div>
+          <div class="stat"><div class="num" data-count="4600000">0</div><div class="lbl">日活跃用户</div></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="player-card">
+          <div class="player-screen">
+            <div class="scanline"></div>
+            <span class="film-tag">全网热映</span>
+            <span class="quality-tag">4K HDR</span>
+            <button class="play-btn" aria-label="播放预览">
+              <svg viewBox="0 0 24 24" fill="none"><path d="m8 5 11 7-11 7V5Z" fill="#fff"/></svg>
+            </button>
+          </div>
+          <div class="player-bar">
+            <div class="pbar-title">本周精选剧场<small>电脑网页版 · 即刻加载 · 稳定流畅</small></div>
+            <span class="pbar-badge">在线观看</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 信任数据 -->
+  <section id="trust">
+    <div class="wrap">
+      <div class="trust-grid">
+        <div class="trust-item reveal"><div class="tnum" data-count="99">0</div><div class="tlabel">% 播放成功率</div></div>
+        <div class="trust-item reveal"><div class="tnum" data-count="12">0</div><div class="tlabel">年品牌沉淀</div></div>
+        <div class="trust-item reveal"><div class="tnum" data-count="24">0</div><div class="tlabel">小时持续更新</div></div>
+        <div class="trust-item reveal"><div class="tnum" data-count="160">0</div><div class="tlabel">个国家地区访问</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影视库 -->
+  <section id="library">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Library</span>
+        <h2>海量影视资源 · 电脑网页版即点即播</h2>
+        <p>九1免费电脑网页版在线观看聚合电影、剧集、综艺、动漫、纪录片等多样内容。分类清晰、检索便捷，打开网页即可进入属于你的私人影院。</p>
+      </div>
+      <div class="filter-row reveal" id="filterRow">
+        <button class="filter-chip active" data-filter="all">全部</button>
+        <button class="filter-chip" data-filter="movie">电影</button>
+        <button class="filter-chip" data-filter="series">剧集</button>
+        <button class="filter-chip" data-filter="variety">综艺</button>
+        <button class="filter-chip" data-filter="anime">动漫</button>
+        <button class="filter-chip" data-filter="doc">纪录片</button>
+      </div>
+      <div class="movie-grid" id="movieGrid">
+        <!-- 卡片由脚本渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品特性 -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>为电脑网页端而生的观影体验</h2>
+        <p>从加载速度到播放稳定性，从画质调节到交互细节，九1免费电脑网页版在线观看围绕浏览器环境持续打磨，让每一次观看都省心顺畅。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg>
+          </div>
+          <h3>秒级加载引擎</h3>
+          <p>针对网页端优化的资源调度机制，点击即播，无需漫长缓冲，让热门影视在浏览器中快速呈现。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          </div>
+          <h3>多档画质切换</h3>
+          <p>依据网络状况自由选择流畅、高清、超清、4K 等画质，电脑大屏观影同样清晰细腻。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>断点续看</h3>
+          <p>自动记录播放进度，换设备、关浏览器都不怕，下次打开网页从上次的位置继续观看。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </div>
+          <h3>智能片单</h3>
+          <p>基于观看偏好推荐相关影视内容，片荒时也能快速找到符合口味的高分佳作。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>安全浏览环境</h3>
+          <p>页面资源经过安全校验，纯净播放界面无干扰，为电脑端用户提供安心的观看环境。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          </div>
+          <h3>全端同步</h3>
+          <p>电脑网页版与移动端观看记录互通，收藏、追剧、历史进度多端实时同步，无缝衔接。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用步骤 -->
+  <section id="howto">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How to watch</span>
+        <h2>三步开启电脑网页版观影</h2>
+        <p>无需下载、无需注册复杂流程，九1免费电脑网页版在线观看把观看门槛降到最低。</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num"></div>
+          <h3>打开电脑浏览器</h3>
+          <p>使用任意主流浏览器访问九1影视首页，电脑网页版自动适配大屏显示，无需安装任何插件。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num"></div>
+          <h3>挑选想看的影视</h3>
+          <p>通过分类频道、搜索框或智能推荐找到目标影片，点击封面即可进入播放详情页面。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num"></div>
+          <h3>点击播放畅享</h3>
+          <p>选择合适的清晰度开始播放，支持全屏、进度拖拽、音量调节等常用操作，沉浸观看。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类频道 -->
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Channels</span>
+        <h2>多元频道分类，覆盖各类观影需求</h2>
+        <p>从热血剧集到治愈纪录片，从爆笑综艺到人气动漫，九1免费电脑网页版在线观看以丰富频道满足不同口味的观众。</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#7a1e2b,#ff4d4f)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">动作电影</span><span class="cat-count">12,480 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#0e5a6b,#38d9d9)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">欧美剧集</span><span class="cat-count">8,236 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#312e81,#a855f7)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">科幻奇幻</span><span class="cat-count">6,712 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#7c2d12,#f59e0b)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">爆笑综艺</span><span class="cat-count">4,905 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#14532d,#22c55e)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">自然纪录片</span><span class="cat-count">2,318 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#831843,#ec4899)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">人气动漫</span><span class="cat-count">9,164 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">悬疑推理</span><span class="cat-count">5,520 部</span>
+        </div>
+        <div class="cat-card reveal" style="background:linear-gradient(135deg,#134e4a,#14b8a6)">
+          <div class="cat-mask"></div>
+          <span class="cat-name">华语精选</span><span class="cat-count">15,880 部</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社区 -->
+  <section id="community">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Community</span>
+        <h2>真实观众，持续活跃的观影社区</h2>
+        <p>每天都有大量用户通过九1免费电脑网页版在线观看追剧、讨论与分享，社区里的每一条评论都来自真实的观影体验。</p>
+      </div>
+      <div class="community-layout">
+        <div class="comment-list" id="commentList">
+          <!-- 评论由脚本渲染 -->
+        </div>
+        <aside class="community-side">
+          <div class="side-card reveal">
+            <h3><span class="dot2"></span>本周热播榜</h3>
+            <ul class="rank-list">
+              <li><span class="rk">1</span><span class="rname">长夜无声</span><span class="rheat">98.6万热度</span></li>
+              <li><span class="rk">2</span><span class="rname">光影之间</span><span class="rheat">87.2万热度</span></li>
+              <li><span class="rk">3</span><span class="rname">山河回声</span><span class="rheat">79.5万热度</span></li>
+              <li><span class="rk">4</span><span class="rname">城市边缘</span><span class="rheat">64.1万热度</span></li>
+              <li><span class="rk">5</span><span class="rname">微光旅程</span><span class="rheat">58.3万热度</span></li>
+            </ul>
+          </div>
+          <div class="side-card reveal">
+            <h3><span class="dot2"></span>热门标签</h3>
+            <div class="hot-tags">
+              <a href="#library">高分电影</a>
+              <a href="#library">都市剧集</a>
+              <a href="#library">犯罪悬疑</a>
+              <a href="#library">治愈系</a>
+              <a href="#library">历史纪实</a>
+              <a href="#library">动作大片</a>
+              <a href="#library">贺岁档</a>
+              <a href="#library">经典回顾</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal" style="text-align:center;margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">FAQ</span>
+        <h2>关于九1免费电脑网页版在线观看的常见问题</h2>
+        <p>这里整理了一些用户在使用电脑网页版观看时经常提到的问题，帮助你更快上手。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-q">电脑网页版观看需要下载客户端吗？<span class="plus"></span></div>
+          <div class="faq-a"><p>不需要。九1免费电脑网页版在线观看完全基于浏览器运行，只要打开网页就能点播影视内容，无需下载安装任何客户端或插件，适配主流电脑浏览器。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">网页版播放卡顿应该如何处理？<span class="plus"></span></div>
+          <div class="faq-a"><p>可以尝试关闭其他占用带宽的程序、在播放器中切换较低清晰度，或刷新页面重新加载。若长期出现卡顿，建议检查网络环境是否稳定。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">观看记录会自动保存吗？<span class="plus"></span></div>
+          <div class="faq-a"><p>会的。系统会自动记录你的观看进度和收藏片单，下次在同一浏览器打开时会提示继续观看，方便追剧与复习剧情。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">影视资源多久更新一次？<span class="plus"></span></div>
+          <div class="faq-a"><p>内容团队保持全天候更新节奏，热门剧集与院线新片会尽快上线，纪录片、动漫与综艺频道也会按周定期补充优质内容。</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">在电脑上可以全屏观看吗？<span class="plus"></span></div>
+          <div class="faq-a"><p>支持。进入播放页面后点击右下角全屏按钮即可进入影院模式，同时支持键盘快捷操作，配合大屏显示器效果更佳。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="wrap cta-inner reveal">
+      <h2>现在打开浏览器，开启你的观影之旅</h2>
+      <p>九1免费电脑网页版在线观看，把丰富的影视内容装进浏览器，随时点开、随时畅享，高清画面与流畅体验一次拥有。</p>
+      <button class="btn btn-primary" onclick="document.getElementById('library').scrollIntoView()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m8 5 11 7-11 7V5Z" fill="#fff"/></svg>
+        立即进入影视库
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <span class="mark">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6.5C4 5.67 4.67 5 5.5 5h9L19 9.5V18c0 .83-.67 1.5-1.5 1.5h-12C4.67 19.5 4 18.83 4 18V6.5Z" fill="#fff"/>
+              <path d="m10 9.5 4.5 2.8L10 15V9.5Z" fill="#ff4d4f"/>
+            </svg>
+          </span>
+          <span class="grad">九1影视</span>
+        </a>
+        <p>九1影视致力于为电脑端用户提供便捷的网页版在线观看服务，海量高清资源持续更新，专注流畅稳定的观影体验。</p>
+        <div class="footer-social">
+          <a href="#top" aria-label="微博">
+            <svg viewBox="0 0 24 24"><path d="M10 3C6 3 3 5.5 3 8.8c0 2 1.2 4 3.2 5.2-.2.6-.7 1.6-.7 1.9 0 .2.2.3.4.2.5-.2 1.6-.9 2.1-1.2.9.3 1.9.4 2.9.4 4 0 7-2.5 7-5.8S14 3 10 3Zm-2.4 8.7c-1.6.2-2.7 1.3-2.6 2.5.1 1.2 1.4 1.9 3 1.7 1.6-.2 2.7-1.3 2.6-2.5-.1-1.2-1.4-1.9-3-1.7Z"/></svg>
+          </a>
+          <a href="#top" aria-label="微信">
+            <svg viewBox="0 0 24 24"><path d="M9 3C4.6 3 1 5.9 1 9.5c0 2 1.2 3.8 3.1 5l-.8 2.2c-.1.3.2.5.4.3l2.5-1.4c.9.2 1.9.4 2.8.4.4 0 .7 0 1-.1-.6-1-.9-2.1-.9-3.4 0-3.5 3.4-6.3 7.6-6.3h.3C16.2 4.5 12.9 3 9 3Zm-2.6 4.6c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9Zm5.2 0c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9Zm2.9 1.7C10.7 9.3 8 12 8 15.3 8 18.2 10.7 20 14 20c.8 0 1.6-.1 2.4-.4l2.1 1.2c.3.2.6-.1.5-.4l-.7-1.8c1.6-1 2.6-2.5 2.6-4.2 0-2.7-2.5-4.9-5.8-4.9Zm-1.6 2.5c.4 0 .7.3.7.7 0 .4-.3.7-.7.7-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7Zm4.3 0c.4 0 .7.3.7.7 0 .4-.3.7-.7.7-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7Z"/></svg>
+          </a>
+          <a href="#top" aria-label="邮件">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8.2L4.4 7h15.2L12 13.2ZM4 8.8V17h16V8.8l-8 5.6-8-5.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>影视频道</h4>
+        <ul>
+          <li><a href="#library">动作电影</a></li>
+          <li><a href="#library">欧美剧集</a></li>
+          <li><a href="#library">悬疑推理</a></li>
+          <li><a href="#library">人气动漫</a></li>
+          <li><a href="#library">自然纪录片</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>产品服务</h4>
+        <ul>
+          <li><a href="#features">电脑网页版</a></li>
+          <li><a href="#howto">观看指南</a></li>
+          <li><a href="#community">社区动态</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#trust">数据概览</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#top">品牌介绍</a></li>
+          <li><a href="#top">内容更新</a></li>
+          <li><a href="#top">用户反馈</a></li>
+          <li><a href="#top">隐私说明</a></li>
+          <li><a href="#top">服务条款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 九1影视 · 九1免费电脑网页版在线观看 版权所有</span>
+      <div class="links">
+        <a href="#top">隐私政策</a>
+        <a href="#top">服务条款</a>
+        <a href="#top">联系我们</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 移动端菜单 ---------- */
+  var hamburger = document.getElementById('hamburger');
+  var mainNav = document.getElementById('mainNav');
+  if (hamburger) {
+    hamburger.addEventListener('click', function(){
+      mainNav.classList.toggle('open');
+    });
+    mainNav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') mainNav.classList.remove('open');
+    });
+  }
+
+  /* ---------- 影视库数据 ---------- */
+  var movies = [
+    {t:'长夜无声', c:'movie', y:'2024', s:'9.2', g:'犯罪 / 悬疑', art:'art-1', glyph:'长夜'},
+    {t:'光影之间', c:'movie', y:'2023', s:'8.8', g:'剧情 / 爱情', art:'art-3', glyph:'光影'},
+    {t:'山河回声', c:'series', y:'2024', s:'9.0', g:'历史 / 正剧', art:'art-4', glyph:'山河'},
+    {t:'城市边缘', c:'series', y:'2023', s:'8.6', g:'都市 / 现实', art:'art-7', glyph:'城市'},
+    {t:'微光旅程', c:'movie', y:'2024', s:'8.9', g:'励志 / 成长', art:'art-2', glyph:'微光'},
+    {t:'深海之谜', c:'doc', y:'2023', s:'9.1', g:'自然 / 探索', art:'art-8', glyph:'深海'},
+    {t:'笑闹江湖', c:'variety', y:'2024', s:'8.4', g:'真人秀 / 喜剧', art:'art-5', glyph:'笑闹'},
+    {t:'星海巡航', c:'anime', y:'2024', s:'9.3', g:'科幻 / 冒险', art:'art-6', glyph:'星海'},
+    {t:'雾港迷踪', c:'series', y:'2024', s:'8.7', g:'悬疑 / 罪案', art:'art-1', glyph:'雾港'},
+    {t:'时光邮局', c:'movie', y:'2023', s:'8.5', g:'温情 / 奇幻', art:'art-3', glyph:'时光'},
+    {t:'荒野诗篇', c:'doc', y:'2024', s:'9.0', g:'人文 / 地理', art:'art-8', glyph:'荒野'},
+    {t:'青春回响', c:'variety', y:'2024', s:'8.3', g:'音乐 / 竞技', art:'art-6', glyph:'青春'}
+  ];
+
+  var grid = document.getElementById('movieGrid');
+  var filterRow = document.getElementById('filterRow');
+
+  function buildCard(m){
+    var card = document.createElement('article');
+    card.className = 'movie-card';
+    card.setAttribute('data-cat', m.c);
+    card.innerHTML =
+      '<div class="movie-thumb">'+
+        '<div class="bg-art '+m.art+'"><div class="art-noise"></div></div>'+
+        '<div class="art-glyph">'+m.glyph+'</div>'+
+        '<div class="overlay"><span class="mini-play"><svg viewBox="0 0 24 24" fill="none"><path d="m8 5 11 7-11 7V5Z" fill="#fff"/></svg></span></div>'+
+      '</div>'+
+      '<div class="movie-info">'+
+        '<h3>'+m.t+'</h3>'+
+        '<div class="movie-meta"><span>'+m.y+' · '+m.g+'</span><span class="tag">★ '+m.s+'</span></div>'+
+      '</div>';
+    return card;
+  }
+
+  movies.forEach(function(m){ grid.appendChild(buildCard(m)); });
+
+  /* 分类筛选 */
+  filterRow.addEventListener('click', function(e){
+    var btn = e.target.closest('.filter-chip');
+    if(!btn) return;
+    var chips = filterRow.querySelectorAll('.filter-chip');
+    for(var i=0;i<chips.length;i++) chips[i].classList.remove('active');
+    btn.classList.add('active');
+    var f = btn.getAttribute('data-filter');
+    var cards = grid.querySelectorAll('.movie-card');
+    for(var j=0;j<cards.length;j++){
+      var show = (f === 'all' || cards[j].getAttribute('data-cat') === f);
+      cards[j].style.display = show ? '' : 'none';
+    }
+  });
+
+  /* ---------- 社区评论数据 ---------- */
+  var comments = [
+    {n:'林间晚风', c:'#ff4d4f', t:'3分钟前', txt:'电脑网页版是真的方便，晚上下班打开浏览器就能接着昨天那部剧往下看，进度也不用自己记。', likes:'128', rep:'24'},
+    {n:'像素旅人', c:'#38d9d9', t:'12分钟前', txt:'画质切换挺顺的，家里网速一般的时候调低一档也不影响观看，缓冲几乎感觉不到。', likes:'96', rep:'18'},
+    {n:'北岸灯塔', c:'#a855f7', t:'28分钟前', txt:'纪录片频道更新得很勤，上次找的深海题材这周就有新的，对喜欢自然类的观众很友好。', likes:'215', rep:'41'},
+    {n:'橙子汽水', c:'#f59e0b', t:'1小时前', txt:'用九1免费电脑网页版在线观看追完了整季剧，全屏之后体验很舒服，也没有乱七八糟的弹窗。', likes:'342', rep:'67'},
+    {n:'深夜剧场', c:'#22c55e', t:'2小时前', txt:'收藏功能很实用，把想看的片子先存起来，周末一次性看完，片单整理得清清楚楚。', likes:'88', rep:'12'}
+  ];
+
+  var cList = document.getElementById('commentList');
+  comments.forEach(function(cm){
+    var el = document.createElement('div');
+    el.className = 'comment';
+    el.innerHTML =
+      '<div class="avatar" style="background:linear-gradient(135deg,'+cm.c+',#11141d)">'+cm.n.charAt(0)+'</div>'+
+      '<div class="comment-body">'+
+        '<div class="comment-head"><span class="cname">'+cm.n+'</span><span class="ctime">'+cm.t+'</span></div>'+
+        '<p>'+cm.txt+'</p>'+
+        '<div class="comment-foot"><span>👍 '+cm.likes+'</span><span>💬 '+cm.rep+'</span><span>分享</span></div>'+
+      '</div>';
+    cList.appendChild(el);
+  });
+
+  /* ---------- FAQ 手风琴 ---------- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(it){
+        it.classList.remove('open');
+        it.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- 数字滚动动画 ---------- */
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var dur = 1400;
+    var start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.floor(target * eased);
+      if (target >= 10000) {
+        el.textContent = (val / 10000).toFixed(1).replace(/\.0$/, '') + '万+';
+      } else {
+        el.textContent = val.toLocaleString('zh-CN') + (target >= 100 ? '+' : '');
+      }
+      if(p < 1) requestAnimationFrame(step);
+      else {
+        if (target >= 10000) el.textContent = (target/10000).toFixed(1).replace(/\.0$/,'') + '万+';
+        else el.textContent = target.toLocaleString('zh-CN') + (target >= 100 ? '+' : '');
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- 滚动浮现 + 数字触发 ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  var counted = new WeakSet();
+
+  function checkReveal(){
+    var vh = window.innerHeight;
+    revealEls.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if(r.top < vh - 60 && r.bottom > 0){
+        el.classList.add('visible');
+        el.querySelectorAll('[data-count]').forEach(function(n){
+          if(!counted.has(n)){ counted.add(n); animateCount(n); }
+        });
+      }
+    });
+  }
+  window.addEventListener('scroll', checkReveal, {passive:true});
+  window.addEventListener('load', checkReveal);
+  setTimeout(checkReveal, 200);
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500) backTop.classList.add('show');
+    else backTop.classList.remove('show');
+  }, {passive:true});
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 播放按钮演示反馈 ---------- */
+  document.querySelectorAll('.play-btn, .mini-play, .movie-card').forEach(function(el){
+    el.addEventListener('click', function(){
+      // 轻微反馈：滚动到影视库
+      var lib = document.getElementById('library');
+      if(lib){ lib.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+
+  /* ---------- 平滑锚点（兼容旧浏览器） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if(id.length > 1){
+        var target = document.querySelector(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth'});
+        }
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
